@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
-	<name>Keepout Zone.kml</name>
-	<Style id="sh_ylw-pushpin">
+	<name>Keepin-IAD55.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -12,13 +22,12 @@
 		</IconStyle>
 		<LineStyle>
 			<color>ff000000</color>
-			<width>2.5</width>
 		</LineStyle>
 		<PolyStyle>
-			<color>5c00ffff</color>
+			<color>4c00ff00</color>
 		</PolyStyle>
 	</Style>
-	<Style id="sn_ylw-pushpin">
+	<Style id="s_ylw-pushpin">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -28,31 +37,20 @@
 		</IconStyle>
 		<LineStyle>
 			<color>ff000000</color>
-			<width>2.5</width>
 		</LineStyle>
 		<PolyStyle>
-			<color>5c00ffff</color>
+			<color>4c00ff00</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin</styleUrl>
-		</Pair>
-	</StyleMap>
 	<Placemark>
-		<name>Keepout Zone</name>
-		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<name>Keepin</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
 		<Polygon>
 			<tessellate>1</tessellate>
 			<outerBoundaryIs>
 				<LinearRing>
 					<coordinates>
-						-77.15144841568842,39.10662985983744,0 -77.14928970398786,39.10657751762425,0 -77.14922902336556,39.10785013857387,0 -77.15077744846222,39.10789669694643,0 -77.15088053618727,39.10722626227648,0 -77.15133376963746,39.10723563066531,0 -77.15144841568842,39.10662985983744,0 
+						-77.65061276370575,38.8143037597816,0 -77.65041687192583,38.81411823752769,0 -77.64875725573417,38.81373745868554,0 -77.64804195613628,38.81374950196462,0 -77.64742197463066,38.81506307887459,0 -77.64743723276406,38.81539865492472,0 -77.64721821420569,38.81593539737276,0 -77.64721962549091,38.81613284845924,0 -77.64721221635915,38.81632523383685,0 -77.64721596241338,38.81650816456565,0 -77.64743885084876,38.81657116725452,0 -77.64774449926632,38.81666182707159,0 -77.64896010758697,38.81693659805164,0 -77.64930749366836,38.81691082312261,0 -77.64951221242222,38.81683310388338,0 -77.65061276370575,38.8143037597816,0 
 					</coordinates>
 				</LinearRing>
 			</outerBoundaryIs>
