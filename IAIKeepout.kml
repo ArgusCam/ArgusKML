@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
-	<name>debug polygon.kml</name>
+	<name>IAIKeepout.kml</name>
 	<Style id="s_ylw-pushpin_hl">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -10,15 +10,13 @@
 			</Icon>
 			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
 		</IconStyle>
-	</Style>
-	<Style id="s_ylw-pushpin">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.7</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
 	</Style>
 	<StyleMap id="m_ylw-pushpin">
 		<Pair>
@@ -30,15 +28,31 @@
 			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
 		</Pair>
 	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.7</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>7f0000ff</color>
+		</PolyStyle>
+	</Style>
 	<Placemark>
-		<name>debug polygon</name>
+		<name>IAI Building Outline</name>
 		<styleUrl>#m_ylw-pushpin</styleUrl>
 		<Polygon>
 			<tessellate>1</tessellate>
 			<outerBoundaryIs>
 				<LinearRing>
 					<coordinates>
-						-77.15066015795094,39.10680524873555,0 -77.15092227054332,39.1068035830437,0 -77.15062960526065,39.10696422498901,0 -77.15093077310961,39.10697825513793,0 -77.15066015795094,39.10680524873555,0 
+						-77.15062629586605,39.10714964631676,0 -77.14995373868601,39.10712891796995,0 -77.1499288013999,39.10743636754773,0 -77.14961255183533,39.1074368774774,0 -77.14960556942366,39.10769621408898,0 -77.15029166479226,39.10771063793633,0 -77.15030390763032,39.1073976917444,0 -77.15061805896686,39.10740217272732,0 -77.15062629586605,39.10714964631676,0 
 					</coordinates>
 				</LinearRing>
 			</outerBoundaryIs>
